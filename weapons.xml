@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+  <weapon>
+    <name>Braton Prime</name>
+    <damage>25</damage>
+    <critChance>5%</critChance>
+    <critDamage>150%</critDamage>
+  </weapon>
+  <weapon>
+    <name>Braton</name>
+    <damage>22</damage>
+    <critChance>5%</critChance>
+    <critDamage>150%</critDamage>
+  </weapon>
+  <weapon>
+    <name>Braton Vandal</name>
+    <damage>22</damage>
+    <critChance>5%</critChance>
+    <critDamage>150%</critDamage>
+  </weapon>
+  <!--<mods>
+    <mod>
+      <name>Shred</name>
+    </mod>
+  </mods>-->
+</assets>
