@@ -1,0 +1,22 @@
+TODO:
+
+- Weapon::propertyToSetterMap
+- Weapon::SetProperty
+- Weapon::addToCatalog
+  - map WeaponCatalog<String, Weapon>
+- Effect
+- Effect::propertyToSetterMap
+- Effect::setProperty
+- Effect::addToCatalog
+  - map EffectCatalog<String, Effect>
+- Module
+- Module::propertyToSetterMap
+- Module::setProperty
+- Module::addToCatalog
+  - map ModuleCatalog<String, Module>
+- Module::addEffect
+- CustomWeapon
+- CustomWeapon::addModule
+- CustomWeapon::calculateStats
+- Faction
+- Faction::

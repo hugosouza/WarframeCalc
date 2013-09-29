@@ -11,6 +11,7 @@
 
 #include "xml.h"
 #include "weapon.h"
+#include "asset_factory.h"
 
 bool XmlObject::loadFile() {
   std::ifstream file;
@@ -34,17 +35,13 @@ void XmlObject::parseBuff() {
   rapidxml::xml_document<> doc;
   try {
     doc.parse<0>(t.get());
-    LOG(INFO) << "First node: " << doc.first_node()->name();
     auto node = doc.first_node();
     for (auto n = node->first_node(); n; n = n->next_sibling()) {
-      LOG(INFO) << " == [" << n->name() << "] == ";
       auto wpn = AssetFactory::getCtor(n->name())();
-      LOG(INFO) << "[" << n->first_node("name")->value() << "]";
       for (auto i = n->first_node(); i; i = i->next_sibling()) {
-        LOG(INFO) << " ---> " << i->name() << " (" << i->value() << ")";
         wpn->setProperty(i->name(), i->value());
       }
-      //LOG(INFO) << "-> xml_node: " << n->first_node("name")->value();
+      std::cout << "Weapon loaded: " << std::endl  << std::string(*wpn) << std::endl;
     }
   } catch (const std::exception& e) {
     std::cout << "Caught exception: " << e.what() << std::endl;

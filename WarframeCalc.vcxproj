@@ -81,11 +81,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="asset_factory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="xml.cpp" />
     <ClCompile Include="weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="asset_catalog.h" />
+    <ClInclude Include="asset_factory.h" />
+    <ClInclude Include="IAsset.h" />
+    <ClInclude Include="asset_util.h" />
     <ClInclude Include="xml.h" />
     <ClInclude Include="mod_effect.h" />
     <ClInclude Include="rapidxml.hpp" />
@@ -98,6 +103,9 @@
     <Xml Include="weapons.xml">
       <SubType>Designer</SubType>
     </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

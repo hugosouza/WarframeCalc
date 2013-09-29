@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <assets>
   <weapon>
+    <name>Braton</name>
+    <damage>20</damage>
+    <critChance>5%</critChance>
+    <critDamage>150%</critDamage>
+    <rof>11.25</rof>
+    <clipsize>45</clipsize>
+    <reloadspeed>2.37</reloadspeed>
+    <damagetype>bullet</damagetype>
+    <weapontype>rifle</weapontype>
+  </weapon>
+  <weapon>
     <name>Braton Prime</name>
     <damage>25</damage>
     <critChance>5%</critChance>
     <critDamage>150%</critDamage>
-  </weapon>
-  <weapon>
-    <name>Braton</name>
-    <damage>22</damage>
-    <critChance>5%</critChance>
-    <critDamage>150%</critDamage>
+    <rof>10</rof>
+    <clipsize>50</clipsize>
+    <reloadspeed>2.4</reloadspeed>
+    <damagetype>BULLET</damagetype>
+    <weapontype>PRIMARY</weapontype>
   </weapon>
   <weapon>
     <name>Braton Vandal</name>
-    <damage>22</damage>
+    <damage>20</damage>
     <critChance>5%</critChance>
     <critDamage>150%</critDamage>
+    <rof>9.38</rof>
+    <clipsize>45</clipsize>
+    <reloadspeed>2.3</reloadspeed>
+    <damagetype>BULLET</damagetype>
+    <weapontype>PRIMARY</weapontype>
   </weapon>
   <!--<mods>
     <mod>
